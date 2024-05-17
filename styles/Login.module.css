@@ -1,0 +1,124 @@
+
+.container {
+    background: #0092E8;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    width: 15%;
+    top: 5%;
+}
+
+.logoSmall {
+    position: absolute;
+    width: 30%;
+    z-index: 1;
+    bottom: -10%;
+    left: -10%;
+    transform: rotate(25deg);
+    opacity: .2;
+
+    animation: moveLogo 10s ease-in-out infinite;
+}
+
+@keyframes moveLogo {
+    50% {
+        transform: rotate(30deg);
+    }
+}
+
+.box {
+    position: relative;
+    z-index: 2;
+
+    background: #fff;
+    padding: 4rem;
+    border-radius: 2rem;
+
+    box-shadow:  20px 20px 60px #007cc5,
+             -20px -20px 60px #00a8ff;
+}
+
+.title {
+    color: #034677;
+    font-weight: 400;
+}
+
+.subtitle {
+    color: #034677;
+    font-weight: 400;
+}
+
+.span {
+    color: #034677;
+    font-weight: 600;
+}
+
+.form {
+    margin-top: 3rem;
+}
+
+.inputbox {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.label {
+    font-weight: 500;
+    color: #034677;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #fff;
+    padding-inline: 5px;
+}
+
+.input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid #034677;
+    font-size: 18px;
+}
+
+.input:focus {
+    border: 2px solid #0092E8;
+    outline: none;
+}
+
+.button {
+    font-size: 18px;
+    color: #fff;
+    background: #034677;
+    padding: 1rem;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 12px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow:  10px 10px 30px #d9d9d9,
+             -10px -10px 30px #ffffff;
+    background: #015794;
+}
+
+.a {
+    font-weight: 400;
+    color: #034677;
+}
+
+.aSpan {
+    font-weight: 600;
+    color: #034677;
+}
