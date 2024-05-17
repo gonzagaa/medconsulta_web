@@ -39,8 +39,8 @@ export default function Login() {
                     </div>
 
                     <button className={styles.button} type="submit">Acessar</button>
-                    <a className={styles.a}>Esqueceu sua senha? <span className={styles.aSpan}>Clique aqui.</span></a>
-                    </form>
+                    <a href='https://portfolio.gustavogonzaga.dev.br' className={styles.a}>Esqueceu sua senha? <span className={styles.aSpan}>Clique aqui.</span></a>
+                </form>
             </main>
 
       <style jsx global>{`

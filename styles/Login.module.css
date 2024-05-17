@@ -116,9 +116,19 @@
 .a {
     font-weight: 400;
     color: #034677;
+    text-decoration: none;
+
+    transition: all 200ms ease-in-out;
 }
 
 .aSpan {
     font-weight: 600;
     color: #034677;
+
+    transition: all 200ms ease-in-out;
+}
+
+.a:hover .aSpan {
+    color: #047dd4;
+    cursor: pointer;
 }
