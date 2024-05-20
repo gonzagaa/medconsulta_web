@@ -1,92 +1,235 @@
 .container {
+  background: #fff;
   min-height: 100vh;
-  padding: 0 0.5rem;
+  min-width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  padding-inline: 3rem;
+}
+
+.content {
   display: flex;
   flex-direction: column;
+  align-items: start;
   justify-content: center;
+}
+
+.header {
+  padding-block: 2rem;
+  border-bottom: 3px solid #034677;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 40px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.headText {
+  color: #034677;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.h2 {
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-size: 30px;
 }
 
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
+.h2Span {
+  font-weight: 700;
 }
 
-.title {
-  text-align: center;
+.p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.title,
-.description {
-  text-align: center;
+.imageCarinha {
+  transition: all 200ms ease-in-out;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.imageCarinha:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
 }
 
-.grid {
+.boxContent {
+  width: 100%;
+}
+
+.listaPacientes {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 55px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
+  gap: 30px;
+  border-bottom: 3px solid #034677;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+.textPaciente {
+  font-size: 20px;
+  font-weight: 500;
+
+  padding: 10px 40px;
+  background: #f0f0f0;
+  box-shadow:  5px 5px 15px #d9d9d976,
+             -5px -5px 15px #ffffff7c;
   border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
+  outline: 2px solid #034677;
+  color: #034677;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.textPacienteAguardando {
+  font-size: 20px;
+  font-weight: 500;
+
+  padding: 10px 40px;
+  background: #0092E8;
+  box-shadow:  5px 5px 15px #d9d9d976,
+             -5px -5px 15px #ffffff7c;
+  border-radius: 10px;
+  outline: 2px solid #0092E8;
+  color: #ffffff;
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.buttonPlantao {
+  width: 100%;
+  border: none;
+  background-color: #0092E8;
+  border-radius: 20px;
+  padding: 30px;
+
+  font-size: 30px;
+  font-weight: 700;
+  color: #034677;
+
+  box-shadow: inset 10px 10px 30px #007cc5,
+            inset -10px -10px 30px #00a8ff;
+
+  position: relative;
+
+  transition: all 200ms ease-in-out;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.buttonPlantao:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
 }
 
-.logo {
-  height: 1em;
+.paragraphyButtonPlantao {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.logoSmall {
+  position: absolute;
+  width: 6%;
+  z-index: 1;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 2%;
+  opacity: .2;
+}
+
+.agenda {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #034677;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card,
+.card_aguardando {
+  padding: 24px;
+  background: #f0f0f0;
+  box-shadow:  15px 15px 29px #d9d9d9,
+             -15px -15px 29px #ffffff;
+  border-radius: 10px;
+  border: 2px solid #034677;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card_aguardando .status {
+  background-color: transparent;
+  outline: 2px solid #034677;
+  color: #034677;
+}
+
+.status {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px;
+  background: #0092E8;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dados {
+  text-align: center;
+  color: #034677;
+}
+
+.textNome {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.textEspecialidade {
+  font-size: 14px;
+}
+
+.data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #034677;
+}
+
+.textData {
+  font-weight: 500;
+}
+
+.textDataSpan {
+  font-weight: 700;
+}
+
+.textDetalhes {
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  .content .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
