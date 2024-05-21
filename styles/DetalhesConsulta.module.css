@@ -55,6 +55,10 @@
     font-size: 18px;
     font-weight: 400;
     color: #034677;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .span {
@@ -93,14 +97,14 @@
 }
 
 .dadosConsulta {
-    margin-top: 40px;
+    margin-top: 60px;
 
     display: flex;
     gap: 40px;
 }
 
 .dadosPaciente {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .dadosPacienteContent {
@@ -115,7 +119,7 @@
 }
 
 .foot {
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
     gap: 40px;
 }

@@ -1,6 +1,13 @@
 import styles from '../styles/DetalhesConsulta.module.css';
 import Head from 'next/head';
 
+import { RiCalendarScheduleLine } from "react-icons/ri";
+import { TbClockHour4 } from "react-icons/tb";
+import { RiHeartsLine } from "react-icons/ri";
+import { FaRegUser, FaUsersRectangle } from "react-icons/fa6";
+import { FiPhone, FiAlertCircle } from "react-icons/fi";
+import { IoCheckmarkOutline } from "react-icons/io5";
+
 export default function DetalhesConsulta() {
     
     return (
@@ -18,22 +25,22 @@ export default function DetalhesConsulta() {
 
                     <div className={styles.buttons}>
                         <button className={styles.buttonIniciar}>Iniciar Atendimento</button>
-                        <h3 className={styles.textStatus}>O Paciente está pronto</h3>
+                        <h3 className={styles.textStatus}>O Paciente está aguardando <IoCheckmarkOutline /></h3>
                     </div>
 
                     <div className={styles.dadosConsulta}>
-                        <p className={styles.p}>Consulta <span className={styles.span}>agendada</span></p>
-                        <p className={styles.p}><span className={styles.span}>Hoje,</span> às 14:30</p>
-                        <p className={styles.p}>Clinica <span className={styles.span}>Médica</span></p>
+                        <p className={styles.p}><RiCalendarScheduleLine /> Consulta <span className={styles.span}>agendada</span></p>
+                        <p className={styles.p}><TbClockHour4 /> <span className={styles.span}>Hoje,</span> às 14:30</p>
+                        <p className={styles.p}><RiHeartsLine /> Clinica <span className={styles.span}>Médica</span></p>
                     </div>
 
                     <div className={styles.dadosPaciente}>
                         <h3 className={styles.h3}>PACIENTE</h3>
 
                         <div className={styles.dadosPacienteContent}>
-                            <p className={styles.p}>Gonzaguinha</p>
-                            <p className={styles.p}>19 aninhos</p>
-                            <p className={styles.p}>(62) 9 8646-4678</p>
+                            <p className={styles.p}><FaRegUser /> Gonzaguinha</p>
+                            <p className={styles.p}><FaUsersRectangle /> 19 aninhos</p>
+                            <p className={styles.p}><FiPhone /> (62) 9 8646-4678</p>
                         </div>
                     </div>
 
@@ -41,14 +48,14 @@ export default function DetalhesConsulta() {
                         <div className={styles.historico}>
                             <h3 className={styles.h3}>HISTÓRICO DE CONSULTAS</h3>
                             <div className={styles.historicoContent}>
-                                <p className={styles.p}>Nenhuma consulta anterior</p>
+                                <p className={styles.p}><FiAlertCircle /> Nenhuma consulta anterior</p>
                             </div>
                         </div>
 
                         <div className={styles.arquivos}>
                             <h3 className={styles.h3}>ARQUIVOS ADICIONADOS</h3>
                             <div className={styles.arquivosContent}>
-                                <p className={styles.p}>Nenhuma consulta anterior</p>
+                                <p className={styles.p}><FiAlertCircle /> Nenhuma consulta anterior</p>
                             </div>
                         </div>
                     </div>
