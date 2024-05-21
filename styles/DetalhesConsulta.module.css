@@ -1,0 +1,151 @@
+.container {
+    background: #fff;
+    min-height: 100vh;
+    min-width: 100vw;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    padding-inline: 3rem;
+    height: 100%;
+}
+  
+.content {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #034677;
+
+
+    box-shadow:  15px 15px 29px #d9d9d9,
+                -15px -15px 29px #ffffff;
+}
+
+.h1 {
+    position: absolute;
+    top: -30px;
+    z-index: 2;
+    background-color: #034677;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.h3 {
+    color: #034677;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #034677;
+}
+
+.span {
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+.buttonIniciar {
+    padding: 10px 20px;
+    background-color: #0092E8;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 22px;
+    border: none;
+
+    transition: all 200ms ease-in-out;
+}
+
+.buttonIniciar:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+.textStatus {
+    color: rgb(16, 200, 3);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.dadosConsulta {
+    margin-top: 40px;
+
+    display: flex;
+    gap: 40px;
+}
+
+.dadosPaciente {
+    margin-top: 40px;
+}
+
+.dadosPacienteContent {
+    background-color: #e6e6e6;
+
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 40px;
+}
+
+.foot {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.historico {
+    
+}
+
+.historicoContent {
+    background-color: #e6e6e6;
+
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 40px;
+}
+
+.arquivos {
+    
+}
+
+.arquivosContent {
+    background-color: #e6e6e6;
+
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 40px;
+}

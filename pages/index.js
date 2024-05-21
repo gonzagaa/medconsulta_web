@@ -1,110 +1,58 @@
+import styles from '../styles/Login.module.css';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+export default function Login() {
+    
+    return (
+        <div className={styles.container}>
+            <Head>
+                <title>MedConsulta - Acesso Médico</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
+            </Head>
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1> 
+            <img className={styles.logoSmall} src="./images/logosmall.svg" />
+            <img className={styles.logo} src="./images/logo.png" />
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+            <main className={styles.box}>
+                <h1 className={styles.title}><span className={styles.span}>Boas-vindas</span> ao MedConsulta, Dr(a)!</h1>
+                <p className={styles.subtitle}>Digite seu <span className={styles.span}>CRM</span> e <span className={styles.span}>Senha</span> para entrar.</p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+                <form className={styles.form}>
+                    <div className={styles.inputbox}>
+                        <label className={styles.label} htmlFor="crm">CRM</label>
+                        <input
+                        className={styles.input}
+                        id="crm"
+                        type="text"
+                        required
+                        />
+                    </div>
+                    <div className={styles.inputbox}>
+                        <label className={styles.label} htmlFor="password">Senha</label>
+                        <input
+                        className={styles.input}
+                        id="password"
+                        type="password"
+                        required
+                        />
+                    </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-        }
-      `}</style>
+                    <button className={styles.button} type="submit">Acessar</button>
+                    <a href='https://portfolio.gustavogonzaga.dev.br' className={styles.a}>Esqueceu sua senha? <span className={styles.aSpan}>Clique aqui.</span></a>
+                </form>
+            </main>
 
       <style jsx global>{`
-        html,
-        body {
+        * {
+          font-family: "Montserrat", sans-serif;
+          box-sizing: border-box;
           padding: 0;
           margin: 0;
-        }
-        * {
-          box-sizing: border-box;
-        }
+        },
       `}</style>
-    </div>
-  );
+      
+        </div>
+    )
 }

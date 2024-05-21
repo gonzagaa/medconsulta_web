@@ -1,6 +1,8 @@
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import React, { useState } from 'react';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css/sea-green';
 
 
 export default function Home() {
@@ -46,10 +48,27 @@ export default function Home() {
                         )}
                         {mostrarConteudo && (
                             <div className={styles.listaPacientes}>
-                                <h3 className={styles.textPacienteAguardando}>Nome do Paciente</h3>
-                                <h3 className={styles.textPaciente}>Nome do Paciente</h3>
-                                <h3 className={styles.textPacienteAguardando}>Nome do Paciente</h3>
-                                <h3 className={styles.textPaciente}>Nome do Paciente</h3>
+                                <Splide
+                                 options={{
+                                    rewind: false,
+                                    gap: '1rem',
+                                  }}
+                                 className={styles.splide}>
+                                    <SplideSlide className={styles.splideSlide}>
+                                        <h3 className={styles.textPacienteAguardando}>Nome do Paciente</h3>
+                                        <h3 className={styles.textPaciente}>Nome do Paciente</h3>
+                                        <h3 className={styles.textPacienteAguardando}>Nome do Paciente</h3>
+                                        <h3 className={styles.textPaciente}>Nome do Paciente</h3>
+                                        <h3 className={styles.textPacienteAguardando}>Nome do Paciente</h3>
+                                    </SplideSlide>
+                                    <SplideSlide className={styles.splideSlide}>
+                                        <h3 className={styles.textPacienteAguardando}>Nome do Paciente</h3>
+                                        <h3 className={styles.textPaciente}>Nome do Paciente</h3>
+                                        <h3 className={styles.textPacienteAguardando}>Nome do Paciente</h3>
+                                        <h3 className={styles.textPaciente}>Nome do Paciente</h3>
+                                        <h3 className={styles.textPacienteAguardando}>Nome do Paciente</h3>
+                                    </SplideSlide>
+                                </Splide> 
                             </div>
                         )}
                     </div>
