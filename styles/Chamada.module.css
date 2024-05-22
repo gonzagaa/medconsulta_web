@@ -1,0 +1,114 @@
+.container {
+    background: #fff;
+    min-height: 100vh;
+    min-width: 100vw;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15fr .5fr;
+}
+  
+.camera {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+}
+
+.camera .testeImagem {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.prontuario {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+
+.dadosPaciente {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #034677;
+
+    display: flex;
+    gap: 40px;
+
+    margin-bottom: 24px;
+
+    box-shadow: 5px 5px 20px #0000005f;
+}
+
+.h3 {
+    color: #034677;
+    font-weight: 700;
+    font-size: 18px;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #034677;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #0092E8;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    box-shadow: 5px 5px 20px #0000005f;
+
+    transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}

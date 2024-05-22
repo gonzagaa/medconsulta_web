@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React, { useState } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
+import ModalComponent from '../components/ModalComponent';
 
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
 
                             <div className={styles.boxCarinha}>
                                 <a>
-                                    <img className={styles.imageCarinha} src="./images/perfilcarinha.svg" />
+                                    <ModalComponent />
                                 </a>
                             </div>
                     </div>
