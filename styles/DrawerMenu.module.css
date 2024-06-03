@@ -1,0 +1,76 @@
+.Menu {
+    height: 100vh;
+    padding: 0;
+    padding-top: 40px;
+}
+
+.h2 {
+    margin-bottom: 40px;
+    margin-top: 50px;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+
+    position: relative;
+    margin-left: 30px;
+}
+
+.h2::before {
+    content: '';
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    background-color: #0092E8;
+    z-index: -1;
+    left: -50%;
+    border-radius: 10px;
+    top: 50%;
+    transform: translate(0, -49%);
+}
+
+.logoMed {
+    width: 250px;
+    margin-left: 30px;
+}
+
+.boxFormulario {
+    padding: 20px;
+    background-color: #f3f3f3;
+    margin-bottom: 50px;
+}
+
+.h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #034677;
+    font-weight: 600;
+}
+
+.inputField {
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #034677;
+    border-radius: 10px
+}
+  
+.selectField {
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #034677;
+    border-radius: 10px
+}
+  
+.textareaField {
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #034677;
+    outline: 1px solid #034677;
+    border-radius: 10px
+}
+
+.textareaField:focus {
+    outline: 2px solid #0879ca;
+}

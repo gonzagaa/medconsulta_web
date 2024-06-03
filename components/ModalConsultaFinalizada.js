@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import styles from '../styles/ModalConsultaFinalizada.module.css';
-
+import { IoClose } from "react-icons/io5";
 
 Modal.setAppElement('#__next');
 
@@ -14,9 +14,11 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    padding: '20px',
+    outline: 'none',
+    padding: 0, 
+    margin: 0, 
     borderRadius: '10px',
-    backgroundColor: '#fff',
+    backgroundColor: 'transparent',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     border: 'none',
     outline: 'none',
@@ -42,7 +44,7 @@ const ModalConsultaFinalizada = () => {
   return (
     <div className={styles.Modal}>
         <button className={styles.buttonOpen} onClick={openModal}>
-            <img className={styles.imageCarinha} src="./images/perfilcarinha.svg" />
+            teste
         </button>
 
       <Modal
@@ -52,14 +54,28 @@ const ModalConsultaFinalizada = () => {
         contentLabel="Example Modal"
       >
         <div className={styles.modalView}>
-            <button className={styles.buttonVoltar} onClick={closeModal}>Voltar</button>
-
-            <div className={styles.buttons}>
-                <button className={styles.button}> Editar perfil</button>
-                <button className={styles.button}> Consultas realizadas</button>
+            <div className={styles.head}>
+              <img className={styles.logoMed} src="./images/logoescrita.svg" />
+              <button className={styles.buttonFechar} onClick={closeModal}><IoClose /></button>
             </div>
 
-            <button className={styles.buttonSair} onClick={closeModal}>Sair da conta</button>
+            <h2 className={styles.h2}>Consulta finalizada!</h2>
+            <select className={styles.select} id="problemas" name="problemas">
+              <option className={styles.option} value="" disabled selected hidden>Escolha uma das opções:</option>
+              <option className={styles.option} value="qualidade_conexao">Problemas com qualidade de conexão</option>
+              <option className={styles.option} value="audio">Problemas com áudio</option>
+              <option className={styles.option} value="video">Problemas com vídeo</option>
+              <option className={styles.option} value="consulta_sucesso">Consulta realizada com sucesso!</option>
+            </select>
+            <textarea
+              className={styles.textarea}
+              rows={5} 
+              cols={50} 
+              placeholder="Descrição..."
+              required 
+            />
+
+            <button className={styles.buttonConcluir} onClick={closeModal}>CONCLUIR</button>
         </div>
       </Modal>
     </div>

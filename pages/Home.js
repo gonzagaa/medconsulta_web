@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
 import ModalComponent from '../components/ModalComponent';
+import ModalDetalhes from '../components/modalDetalhes';
 
 
 export default function Home() {
@@ -93,7 +94,7 @@ export default function Home() {
                             </div>
 
                             <div className={styles.card}>
-                                <h4 className={styles.status}>PACIENTE AGUARDANDO</h4>
+                                <ModalDetalhes />
 
                                 <div className={styles.dados}>
                                     <h5 className={styles.textNome}>NOME DO PACIENTE</h5>

@@ -29,15 +29,30 @@
     border-radius: 20px;
     border: 2px solid #034677;
 
-
     box-shadow:  15px 15px 29px #d9d9d9,
                 -15px -15px 29px #ffffff;
 }
 
+.status {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px;
+    background: #0092E8;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+
+    transition: all 200ms ease-in-out;
+  }
+
+.status:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
 .h1 {
-    position: absolute;
-    top: -30px;
-    z-index: 2;
     background-color: #034677;
     color: #fff;
     font-weight: 500;

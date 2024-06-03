@@ -1,0 +1,93 @@
+.modalView {
+    background-color: #034677;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-bottom: 60px;
+}
+
+.buttonFechar {
+    background-color: #05558e;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    line-height: 0;
+    border-radius: 50%;
+
+    transition: all 200ms ease-in-out;
+}
+
+.buttonFechar:hover {
+    background: #055f9f;
+    cursor: pointer;
+}
+
+.h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.textarea::placeholder {
+    color: #c4d8fc;
+}
+
+.select, 
+.textarea {
+    width: 100%;
+    background-color: #05558e;
+    border: none;
+    color: #c4d8fc;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.select:hover,
+.textarea:hover {
+    cursor: pointer;
+    background: #055f9f;
+}
+
+.select:focus,
+.textarea:focus {
+    outline: 2px solid #096ab0;
+}
+
+.buttonConcluir {
+    width: 100%;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: #0092E8;
+    padding: 10px;
+    font-size: 22px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.buttonConcluir:hover {
+    cursor: pointer;
+    background-color: #12a7fe;
+}

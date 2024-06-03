@@ -1,4 +1,5 @@
 import styles from '../styles/Chamada.module.css';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import { FaRegUser, FaUsersRectangle } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
@@ -7,8 +8,15 @@ import { LiaFileMedicalSolid } from "react-icons/lia";
 import { MdHistory } from "react-icons/md";
 
 import ModalConsultaFinalizada from '../components/ModalConsultaFinalizada';
+import MenuDrawer from '../components/MenuDrawer';
+import Button from '@mui/material/Button';
 
 export default function Chamada() {
+    const [drawerOpen, setDrawerOpen] = useState(false);
+
+    const handleDrawerToggle = () => {
+        setDrawerOpen(!drawerOpen);
+    };
     
     return (
         <div className={styles.container}>
@@ -27,7 +35,8 @@ export default function Chamada() {
                     </div>
 
                     <div className={styles.prontuario}>
-
+                        <Button onClick={handleDrawerToggle}>Toggle Drawer</Button>
+                        <MenuDrawer open={drawerOpen} onClose={handleDrawerToggle} />
                     </div>
 
                     <div className={styles.detalhes}>
