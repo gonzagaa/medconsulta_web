@@ -21,7 +21,6 @@ const customStyles = {
     backgroundColor: 'transparent',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     border: 'none',
-    outline: 'none',
   },
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.25)',

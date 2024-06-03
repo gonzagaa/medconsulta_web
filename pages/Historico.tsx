@@ -1,6 +1,8 @@
 import styles from '../styles/Historico.module.css';
 import Head from 'next/head';
 import { SlArrowLeft } from "react-icons/sl";
+import React from 'react';
+
 
 export default function Historico() {
     return (
@@ -8,7 +10,7 @@ export default function Historico() {
             <Head>
                 <title>MedConsulta - Acesso Médico</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
                 
             </Head>

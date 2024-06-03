@@ -29,7 +29,6 @@ const MenuDrawer = ({ open, onClose }) => {
               placeholder="Histórico da doença atual"
               minRows={3}
               maxRows={5}
-              fullWidth
               className={styles.textareaField}
             />
         </div>
@@ -41,7 +40,6 @@ const MenuDrawer = ({ open, onClose }) => {
               placeholder="Antecedentes"
               minRows={3}
               maxRows={5}
-              fullWidth
               className={styles.textareaField}
             />
             <TextareaAutosize
@@ -49,7 +47,6 @@ const MenuDrawer = ({ open, onClose }) => {
               placeholder="Outro"
               minRows={3}
               maxRows={5}
-              fullWidth
               className={styles.textareaField}
             />
         </div>
@@ -122,7 +119,6 @@ const MenuDrawer = ({ open, onClose }) => {
               placeholder="Orientação"
               minRows={3}
               maxRows={5}
-              fullWidth
               className={styles.textareaField}
             />
 
@@ -137,7 +133,6 @@ const MenuDrawer = ({ open, onClose }) => {
               placeholder="Hipótese Diagnóstica (HD)"
               minRows={3}
               maxRows={5}
-              fullWidth
               className={styles.textareaField}
             />
         </div>
